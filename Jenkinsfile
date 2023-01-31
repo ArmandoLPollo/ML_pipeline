@@ -11,6 +11,7 @@ pipeline {
                 bat 'python -m pip install Flask'
                 bat 'python -m pip install requests'
                 bat 'python -m pip install numpy'
+                bat 'python -m pip install keras'
                 bat 'python test_main.py'
             }
         }
