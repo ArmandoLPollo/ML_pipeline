@@ -8,6 +8,7 @@ pipeline {
     stages {    
         stage('Testing app') {
             steps {
+                bat 'python -m pip install --upgrade pip'
                 bat 'python -m pip install Flask'
                 bat 'python -m pip install requests'
                 bat 'python -m pip install numpy'
